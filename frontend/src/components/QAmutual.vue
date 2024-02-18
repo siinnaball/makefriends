@@ -3,13 +3,22 @@
     <div class="flex flex-wrap place-content-center">
 
         <div class="QAcaed-style">
-            01111111111118888822222222222222222288888888888888888111
+
+            <div class="bg-red-200 h-8"> </div>
+
+            <div class="p-2">
+
+                <div>QQQQ</div>
 
 
-            <div class="submit-btn">
-                <button class=" bg-blue-100 active:bg-blue-600 ...">
-                    Submit
-                </button>
+                <div>AAAA</div>
+
+                <div class="submit-btn">
+                    <button class=" bg-blue-100 active:bg-blue-600 ...">
+                        Submit
+                    </button>
+                </div>
+
             </div>
 
         </div>
@@ -24,7 +33,7 @@
 
 <style lang="scss">
 .QAcaed-style {
-    @apply bg-pink-100 basis-72 min-h-48 p-2 break-all;
+    @apply bg-pink-100 basis-72 min-h-48 break-all;
 }
 
 .submit-btn {
