@@ -1,22 +1,28 @@
 <template>
-    <!-- <p class="text-base"> hihi阿拉拉拉拉</p> -->
+    <input type="number" class="border-solid border-4 border-indigo-500/100">
     <div class="flex flex-wrap place-content-center">
 
-        <div class="QAcaed-style">
+        <div class="QAcard-style">
 
-            <div class="bg-red-200 h-8"> </div>
+            <div class="bg-red-200 h-7"> </div>
 
-            <div class="p-2">
+            <div class="p-3 flex flex-col justify-between h-full">
 
-                <div>QQQQ</div>
+                <div class="leading-tight tracking-wider mb-4">QQ問問問問QQQQ問問QQQQ問問QQQQQQQQ</div>
+
+                <div class="flex flex-col justify-between h-full">
+
+                    <div class="mb-3">
+                        <div class="mb-1">AAAA</div>
+                    </div>
 
 
-                <div>AAAA</div>
+                    <div class="submit-btn ">
+                        <button class=" bg-blue-100 active:bg-blue-600 ">
+                            Submit
+                        </button>
+                    </div>
 
-                <div class="submit-btn">
-                    <button class=" bg-blue-100 active:bg-blue-600 ...">
-                        Submit
-                    </button>
                 </div>
 
             </div>
@@ -32,8 +38,8 @@
 
 
 <style lang="scss">
-.QAcaed-style {
-    @apply bg-pink-100 basis-72 min-h-48 break-all;
+.QAcard-style {
+    @apply bg-pink-100 basis-72 min-h-48 break-all flex flex-col;
 }
 
 .submit-btn {
