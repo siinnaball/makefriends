@@ -1,5 +1,5 @@
 <template>
-    <input type="number" class="border-solid border-4 border-indigo-500/100">
+    <input type="number" v-model="num" class="border-solid border-4 border-indigo-500/100">
     <div class="flex flex-wrap place-content-center">
 
         <div class="QAcard-style">
@@ -34,12 +34,14 @@
 
 <script setup>
 
+
+
 </script>
 
 
 <style lang="scss">
 .QAcard-style {
-    @apply bg-pink-100 basis-72 min-h-48 break-all flex flex-col;
+    @apply bg-pink-100 basis-72 min-h-48 break-all flex flex-col m-2;
 }
 
 .submit-btn {
