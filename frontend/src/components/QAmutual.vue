@@ -1,8 +1,9 @@
 <template>
-    <input type="number" v-model="num" class="border-solid border-4 border-indigo-500/100">
-    <div class="flex flex-wrap place-content-center">
+    <input type="number" v-model="total" class="border-solid border-4 border-indigo-500/100">
 
-        <div class="QAcard-style">
+    <div class="flex flex-wrap place-content-center mx-24">
+
+        <div v-for="num in total" :key="num" class="QAcard-style">
 
             <div class="bg-red-200 h-7"> </div>
 
@@ -17,11 +18,13 @@
                     </div>
 
 
-                    <div class="submit-btn ">
+                    <div v-if="clearance" class="submit-btn">
                         <button class=" bg-blue-100 active:bg-blue-600 ">
                             Submit
                         </button>
                     </div>
+
+
 
                 </div>
 
@@ -33,15 +36,16 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
 
-
-
+const total = ref(0);
+const clearance = ref(false);
 </script>
 
 
 <style lang="scss">
 .QAcard-style {
-    @apply bg-pink-100 basis-72 min-h-48 break-all flex flex-col m-2;
+    @apply bg-pink-100 basis-72 min-h-24 break-all flex flex-col m-2;
 }
 
 .submit-btn {
