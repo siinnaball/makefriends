@@ -1,14 +1,14 @@
 <template>
     <div class="flex justify-between  px-52 w-full">
 
-        <div>
+        <div class="flex">
             <RouterLink :to="'/'" class="login-btn bg-emerald-200"> 這裡回首頁 </RouterLink>
         </div>
 
         <div class="flex">
-            <RouterLink :to="'/'" class="login-btn  bg-emerald-400 hover:bg-emerald-500 hover:text-white"> 登入
+            <RouterLink :to="'/logIn'" class="login-btn  bg-emerald-400 hover:bg-emerald-500 hover:text-white"> 登入
             </RouterLink>
-            <RouterLink :to="'/'" class="login-btn bg-slate-400 hover:bg-slate-300"> 註冊 </RouterLink>
+            <RouterLink :to="'/register'" class="login-btn bg-slate-400 hover:bg-slate-300"> 註冊 </RouterLink>
         </div>
 
     </div>
